@@ -53,8 +53,9 @@ class HomePage extends StatelessWidget {
               SizedBox(
                 height: 70,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              Wrap(
+                spacing: 38,
+                runSpacing: 40,
                 children: [
                   Image.asset(
                     'assets/images/item1.png',
@@ -70,15 +71,7 @@ class HomePage extends StatelessWidget {
                     'assets/images/item3.png',
                     height: 80,
                     width: 80,
-                  )
-                ],
-              ),
-              SizedBox(
-                height: 40,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
+                  ),
                   Image.asset(
                     'assets/images/item4.png',
                     height: 80,
